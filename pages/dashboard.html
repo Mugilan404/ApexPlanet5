@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Dashboard | JobQuest</title>
+
+  <!-- Favicon -->
+  <link rel="icon" href="../assets/logo.jpg" type="image/jpeg" />
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet"/>
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"/>
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="../css/style.css" />
+
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: url('../assets/hero-bg.jpg') center/cover no-repeat;
+      color: rgb(105, 88, 168);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .sidebar {
+      min-height: calc(100vh - 56px - 70px);
+      background-color: #343a40;
+      color: white;
+      padding: 30px 20px;
+    }
+
+    .sidebar h4 {
+      color: #ffc107;
+      margin-bottom: 30px;
+    }
+
+    .sidebar a {
+      color: #ddd;
+      text-decoration: none;
+      display: block;
+      margin: 15px 0;
+      transition: 0.2s;
+    }
+
+    .sidebar a:hover {
+      color: #fff;
+      font-weight: 600;
+    }
+
+    .dashboard-content {
+      padding: 40px 30px;
+    }
+
+    .card {
+      border: none;
+      border-radius: 10px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    }
+
+    .card h5 {
+      font-weight: 600;
+    }
+
+    footer {
+      background-color: #343a40;
+      color: white;
+      padding: 20px 0;
+      text-align: center;
+      margin-top: auto;
+    }
+
+    footer small {
+      color: #bbb;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- 🔝 Header/Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center" href="index.html">
+        <img src="../assets/logo.jpg" alt="Logo" width="40" height="40" class="rounded-circle me-2" />
+        <strong>JobQuest</strong>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link" href="job-listings.html">Jobs</a></li>
+          <li class="nav-item"><a class="nav-link" href="post-job.html">Post Job</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- 📊 Dashboard Layout -->
+  <div class="container-fluid">
+    <div class="row">
+      <!-- Sidebar -->
+      <div class="col-md-3 sidebar">
+        <h4>👤 JobQuest</h4>
+        <a href="#">Dashboard</a>
+        <a href="#">My Profile</a>
+        <a href="#">Saved Jobs</a>
+        <a href="#">Applications</a>
+        <a href="#">Post a Job</a>
+        <a href="#">Manage Jobs</a>
+        <a href="login.html">Logout</a>
+      </div>
+
+      <!-- Main Dashboard Content -->
+      <div class="col-md-9 dashboard-content">
+        <h2 class="mb-4">Welcome, Madhan👋</h2>
+
+        <div class="row g-4">
+          <div class="col-md-6">
+            <div class="card p-4">
+              <h5>Total Applications</h5>
+              <p class="display-6">12</p>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="card p-4">
+              <h5>Jobs Posted</h5>
+              <p class="display-6">3</p>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="card p-4">
+              <h5>Shortlisted</h5>
+              <p class="display-6">3</p>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="card p-4">
+              <h5>Messages</h5>
+              <p class="display-6">15</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ✅ Footer -->
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 JobQuest. All rights reserved.</p>
+      <small>Made with 💼 in India</small>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

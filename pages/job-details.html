@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Job Details | JobQuest</title>
+
+  <!-- Favicon -->
+  <link rel="icon" href="../assets/logo.jpg" type="image/jpeg" />
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet" />
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+  <!-- Custom CSS -->
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      background: url('../assets/hero-bg.jpg') center/cover no-repeat;
+    }
+
+    /* Header */
+    .main-header {
+      background-color: #111827;
+      color: white;
+      padding: 15px 0;
+    }
+
+    .main-header .navbar-brand {
+      font-weight: 700;
+      font-size: 1.8rem;
+      display: flex;
+      align-items: center;
+    }
+
+    .main-header img {
+      height: 40px;
+      margin-right: 10px;
+    }
+
+    .main-header a {
+      color: #f3f4f6;
+      font-weight: 500;
+      text-decoration: none;
+      margin-left: 20px;
+    }
+
+    .main-header a:hover {
+      color: #ffc107;
+    }
+
+    /* Job Details */
+    .job-section {
+      background-color: white;
+      padding: 40px;
+      margin-top: 40px;
+      border-radius: 10px;
+      box-shadow: 0 10px 30px rgba(168, 163, 163, 0.05);
+    }
+
+    .job-section h2 {
+      font-weight: 600;
+      margin-bottom: 15px;
+    }
+
+    .job-meta {
+      color: #6c757d;
+      margin-bottom: 30px;
+    }
+
+    .apply-btn {
+      background-color: #007bff;
+      color: white;
+      font-weight: 600;
+    }
+
+    .apply-btn:hover {
+      background-color: #0056b3;
+    }
+
+    /* Footer */
+    footer {
+      background-color: #111827;
+      color: #ccc;
+      text-align: center;
+      padding: 20px 10px;
+      margin-top: 60px;
+    }
+
+    footer p {
+      margin: 0;
+      font-size: 0.95rem;
+    }
+
+    footer small {
+      color: #aaa;
+    }
+
+    @media (max-width: 768px) {
+      .main-header .navbar-brand {
+        font-size: 1.5rem;
+      }
+
+      .main-header a {
+        font-size: 0.95rem;
+      }
+
+      .job-section {
+        padding: 30px 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- 🔥 HEADER -->
+  <header class="main-header">
+    <div class="container d-flex justify-content-between align-items-center">
+      <a class="navbar-brand" href="index.html">
+        <img src="../assets/logo.jpg" alt="Logo" />
+        JobQuest
+      </a>
+      <nav>
+        <a href="job-listings.html">Jobs</a>
+        <a href="post-job.html">Post Job</a>
+        <a href="dashboard.html">Dashboard</a>
+        <a href="login.html">Login</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- 💼 Job Details -->
+  <div class="container job-section">
+    <h2>Frontend Developer (React.js)</h2>
+    <div class="job-meta">
+      <strong>Company:</strong> DevElet Technologies &nbsp; | &nbsp;
+      <strong>Location:</strong> Remote &nbsp; | &nbsp;
+      <strong>Type:</strong> Full Time
+    </div>
+
+    <h5>Job Description:</h5>
+    <p>
+      We are looking for a skilled frontend developer with strong React.js experience to build modern web interfaces. The ideal candidate should be proficient in component-based development, REST API integration, and responsive design principles.
+    </p>
+
+    <h5>Responsibilities:</h5>
+    <ul>
+      <li>Develop scalable frontend components using React</li>
+      <li>Integrate with backend RESTful APIs</li>
+      <li>Ensure cross-browser compatibility and performance</li>
+      <li>Collaborate with UI/UX designers and backend developers</li>
+    </ul>
+
+    <h5>Qualifications:</h5>
+    <ul>
+      <li>1-3 years of frontend experience</li>
+      <li>Proficiency in HTML, CSS, JavaScript, React</li>
+      <li>Good understanding of version control (Git)</li>
+      <li>Strong debugging and problem-solving skills</li>
+    </ul>
+
+    <div class="text-center mt-4">
+      <a href="apply-job.html" class="btn btn-lg apply-btn">Apply Now</a>
+    </div>
+  </div>
+
+  <!-- 👟 FOOTER -->
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 JobQuest. All rights reserved.</p>
+      <small>Made with 💼 in India</small>
+    </div>
+  </footer>
+
+  <!-- JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
